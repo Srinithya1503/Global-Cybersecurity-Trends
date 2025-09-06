@@ -9,7 +9,7 @@ library(corrplot)
 library(reshape2)
 
 # Load data
-cyber_data <- read_csv("C:/Users/srinithya/Desktop/NITHYA/Data Analysis Project/Global-Cybersecurity/data/raw_data/Global_Cybersecurity_Threats_2015-2024.csv") %>% # nolint
+cyber_data <- read_csv("C:/Users/Global-Cybersecurity-Trends/data/raw_data/Global_Cybersecurity_Threats_2015-2024.csv") %>% # nolint
   clean_names()
 
 # Print column names to check
@@ -56,16 +56,16 @@ print(head(industry_threats))
 
 
 # Save the cleaned data
-write_csv(cyber_data, "C:/Users/srinithya/Desktop/NITHYA/Data Analysis Project/Global-Cybersecurity/data/analysed_data/cleaned_cyber_data.csv") # nolint
+write_csv(cyber_data, "C:/Users/Global-Cybersecurity-Trends/data/analysed_data/cleaned_cyber_data.csv") # nolint
 print("Data cleaning and analysis complete. Cleaned data saved as cleaned_cyber_data.csv") # nolint
 
 ##### Combining Socioeconomic Indicators with Cybersecurity Data #####
 
 # Load cleaned cyber data
-cyber_data <- read_csv("C:/Users/srinithya/Desktop/NITHYA/Data Analysis Project/Global-Cybersecurity/data/analysed_data/cleaned_cyber_data.csv") # nolint
+cyber_data <- read_csv("C:/Users/Global-Cybersecurity-Trends/data/analysed_data/cleaned_cyber_data.csv") # nolint
 
 # Load socioeconomic indicators
-socioeconomic_data <- read_csv("C:/Users/srinithya/Desktop/NITHYA/Data Analysis Project/Global-Cybersecurity/data/raw_data/socioeconomic_indicators.csv") # nolint
+socioeconomic_data <- read_csv("C:/Users/Global-Cybersecurity-Trends/data/raw_data/socioeconomic_indicators.csv") # nolint
 
 # Merge the datasets on country and year
 merged_data <- left_join(cyber_data, socioeconomic_data, by = c("country", "year")) # nolint
@@ -79,5 +79,5 @@ print(colSums(is.na(merged_data)))
 
 
 # Save the merged data
-write_csv(merged_data, "C:/Users/srinithya/Desktop/NITHYA/Data Analysis Project/Global-Cybersecurity/data/analysed_data/merged_cyber_socioeconomic_data.csv") # nolint
+write_csv(merged_data, "C:/Users/Global-Cybersecurity-Trends/data/analysed_data/merged_cyber_socioeconomic_data.csv") # nolint
 print("Merged data saved as merged_cyber_socioeconomic_data.csv") # nolint
