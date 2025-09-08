@@ -1,12 +1,8 @@
 # Load libraries
 library(tidyverse)
 library(lubridate)
-library(ggplot2)
-#install.packages("janitor") # nolint
-library(janitor)
-#install.packages("corrplot") # nolint
-library(corrplot)
-library(reshape2)
+
+
 
 # Load data
 cyber_data <- read_csv("C:/Users/Global-Cybersecurity-Trends/data/raw_data/Global_Cybersecurity_Threats_2015-2024.csv") %>% # nolint
