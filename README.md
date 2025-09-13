@@ -31,7 +31,7 @@ This project explores global cybersecurity threats from 2015 to 2024 using a com
 ##  Key Visualizations
 - Threat frequency over time
 - Top countries by incident count
-- Heatmap of threat types by region
+
 
 
 ##  Tools & Libraries
