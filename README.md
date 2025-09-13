@@ -44,5 +44,4 @@ This project explores global cybersecurity threats from 2015 to 2024 using a com
 MIT License
 
 
-├── report/
-│   └── cybersecurity_eda_report.Rmd
+
