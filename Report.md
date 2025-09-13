@@ -12,7 +12,7 @@ Ransomware
 DDoS Attacks
 Insider Threats**
 
-📌 **Visualization Example**:
+📌 **Visualization Example**: 01_most_common_threats.png
 
 
 📈 **2. Trends Over Time and Across Regions**
@@ -21,7 +21,7 @@ Insider Threats**
 Incident counts were **grouped by year and attack type**.
 Some threats (e.g., Ransomware) show significant growth in recent years, while others have declined.
 
-📌 **Visualization Example**:
+📌 **Visualization Example**: 02_threats_over_time.png
 
 
 🔹 **Regional Trends**
@@ -34,8 +34,6 @@ Brazil
 Russia
 United Kingdom**
 
-📌 **Visualization Example**:
-
 
 🏭 **3. Threat Distribution by Industry and Geography**
 The analysis also examined the distribution of threats across industries and countries.
@@ -47,9 +45,6 @@ Healthcare
 Government
 Technology
 Education**
-
-📌 **Visualization Example**:
-
 
 🔹 **Industry-Specific Threats**
 **Finance → Phishing & Ransomware
@@ -80,7 +75,7 @@ _
 📁 global-cybersecurity-analysis/
  ├── data/                 # Raw and processed datasets
  ├── scripts/              # Python/R scripts for data processing
- ├── visuals/              # Charts and dashboards 
+ ├── visuals/              # Charts 
  ├── Report.md             # Analysis report
  └── README.md             # Project overview
 
